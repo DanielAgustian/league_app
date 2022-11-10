@@ -123,8 +123,8 @@ class _DetailTeamScreenState extends State<DetailTeamScreen> {
                                         primary: colorPalette6,
                                         onPrimary: Colors.white),
                                     onPressed: () {
-                                      launchUrl(
-                                          Uri.parse(detail!.strWebsite ?? ''));
+                                      launchUrl(Uri.parse('https://' +
+                                          (detail!.strWebsite ?? '')));
                                     },
                                     child: Text(
                                       'Visit Website',
